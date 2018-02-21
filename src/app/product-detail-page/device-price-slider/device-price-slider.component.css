@@ -31,3 +31,61 @@ input[type=range]::-ms-track {
     border-color: transparent;
     color: transparent;
 }
+
+
+/* Special styling for Webkit/Blink */
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 25px;
+    background: #2af5ff;
+    cursor: pointer;
+    margin-top: -14px;
+    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    box-shadow: 0 7px 0 0 rgb(39, 39, 39);
+}
+
+
+/* All the same stuff for Firefox */
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    /* some ugly styling */
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    background: white;
+    cursor: pointer;
+}
+
+
+/* All the same stuff for IE */
+
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #000000;
+    height: 36px;
+    width: 16px;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 7px 0 0 rgb(39, 39, 39);
+    background: #2af5ff;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 7px 0 0 rgb(39, 39, 39);
+    background: transparent;
+    border-width: 16px;
+    color: transparent;
+}
