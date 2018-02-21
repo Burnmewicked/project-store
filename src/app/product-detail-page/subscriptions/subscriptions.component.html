@@ -1,0 +1,14 @@
+<div class="row mt-5 subscriptions justify-content-center">
+  <div class="col-xs-12 subscription-box">
+    <h2>The best 7G subscriptions in Tokyo</h2>
+    <div class="row d-flex justify-content-between subscription-details" [ngClass]="{focus: buttonSelected === true }" *ngFor="let subscription of subscriptions" (click)="selectSubscription()">
+      <div class="col-xs-2">
+        <h4>{{ subscription.name }}</h4>
+      </div>
+      <div class="col-xs-2 col- data">{{ subscription.data }}</div>
+      <div class="col-xs-2  minutes">{{ subscription.minutes }}</div>
+      <div class="col-xs-2 full-price">{{ subscription.fullPrice }}</div>
+      <div class="col-xs-4 disc-price">{{ subscription.discountPrice }}</div>
+    </div>
+  </div>
+</div>

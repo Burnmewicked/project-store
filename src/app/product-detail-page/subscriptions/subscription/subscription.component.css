@@ -1,0 +1,10 @@
+.subscription-details {
+    line-height: 2.1;
+    padding: 10px 20px;
+    background: #2af5ff;
+    box-shadow: 0 7px 0 0 #1dc8d1;
+}
+
+.subscription-details h4 {
+    color: black;
+}

@@ -1,0 +1,33 @@
+.device-price-slider-box {
+    width: 600px;
+    background: #343a40;
+    padding: 15px 30px;
+    box-shadow: 0 7px 0 0 rgb(39, 39, 39);
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    /* Hides slider so that custom slider can be made */
+    width: 100%;
+    /* Specific width is required for Firefox */
+    background: transparent;
+    /*  Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+    /* Removes the blue border */
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
