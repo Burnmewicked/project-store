@@ -8,20 +8,14 @@ import { Subscription } from './subscription.model';
 })
 export class SubscriptionsComponent implements OnInit {
   subscriptions: Subscription[] = [
-    new Subscription('Purple Flex', '5 GB', '500 minutes', '$ 35,00', '$ 25,00'),
-    new Subscription('Purple', '15 GB', 'Unlimited Calling', '$ 45,00', '$ 35,00'),
-    new Subscription('Purple Pro', '45 GB', 'Unlimited Calling', '$ 65,00', '$ 55,00'),
+    new Subscription('Basic', '5 GB', '500 minutes', '$ 35,00', '$ 25,00'),
+    new Subscription('Flex', '15 GB', 'Unlimited Calling', '$ 45,00', '$ 35,00'),
+    new Subscription('Pro', '45 GB', 'Unlimited Calling', '$ 65,00', '$ 55,00'),
+    new Subscription('1337', '45 GB', 'Unlimited Calling', '$ 159,00', '$ 135,00')
   ];
-  buttonSelected = false;
 
   constructor() { }
 
   ngOnInit() {
   }
-
-  selectSubscription() {
-    this.buttonSelected = !this.buttonSelected;
-    console.log(this.buttonSelected);
-  }
-
 }

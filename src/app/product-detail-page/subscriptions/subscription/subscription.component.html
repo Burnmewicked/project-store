@@ -1,6 +1,6 @@
-<div class="row d-flex justify-content-between subscription-details">
+<div class="row d-flex justify-content-between subscription-details" [ngClass]="{focus: buttonSelected === true }" (click)="selectSubscription()">
   <div class="col-xs-2">
-    <h3>{{ subscription.name }}</h3>
+    <h4>{{ subscription.name }}</h4>
   </div>
   <div class="col-xs-2">{{ subscription.data }}</div>
   <div class="col-xs-4">{{ subscription.minutes }}</div>

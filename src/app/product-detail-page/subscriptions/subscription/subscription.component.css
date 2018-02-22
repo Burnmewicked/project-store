@@ -1,10 +1,34 @@
 .subscription-details {
+    width: 540px;
     line-height: 2.1;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background: #2af5ff;
     box-shadow: 0 7px 0 0 #1dc8d1;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .subscription-details h4 {
     color: black;
+}
+
+.subscription-details:hover {
+    background: #d0ff00;
+    box-shadow: inset 0 7px 0 0 #b3c50d;
+    transform: translateY(7px);
+}
+
+.subscription-details:active {
+    background: #d0ff00;
+    box-shadow: inset 0 7px 0 0 #b3c50d;
+}
+
+.focus {
+    background: #d0ff00;
+    box-shadow: inset 0 7px 0 0 #b3c50d;
+}
+
+.full-price {
+    text-decoration: line-through;
 }
